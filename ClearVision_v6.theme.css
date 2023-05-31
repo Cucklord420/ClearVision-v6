@@ -73,6 +73,22 @@
   --bd-blue: var(--main-color);
   --bd-blue-hover: var(--hover-color);
   --bd-blue-active: var(--hover-color);
+  .typeWindows-2-g3UY > .wordmark-2u86JB:before,
+.typeWindows-2-g3UY > .wordmark-2u86JB:after {
+  content: initial;
+}
+.container-YkUktl {
+  margin-bottom: 0px; 
+}
+.container-YkUktl:before,
+.container-YkUktl:after,
+.container-YkUktl:hover:before,
+.container-YkUktl:hover:after {
+ content: initial;
+}
+.typeMacOS-3V4xXE:before,
+.typeMacOS-3V4xXE:after {
+  content: initial;
 }
 
 /* Any custom CSS below here */
