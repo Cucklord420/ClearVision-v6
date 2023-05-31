@@ -1,3 +1,14 @@
+/**
+ * @name deeznuts
+ * @author ClearVision Team
+ * @version 6.3.0
+ * @description Highly customizable and beautiful theme for BetterDiscord.
+ * @source https://github.com/ClearVision/ClearVision-v6
+ * @website https://clearvision.github.io
+ * @invite 7pNUC9C
+ * @BDEditor Clear Vision
+*/
+
 @import url('https://clearvision.github.io/ClearVision-v6/main.css');
 
 :root {
@@ -43,7 +54,7 @@
   --user-modal-blur: 2px;
   --home-icon: url('https://i.imgur.com/mg6Y8LT.jpg');
   --home-position: center;
-  --home-size: 40px;
+  --home-size: 47px;
   --channel-unread: var(--main-color);
   --channel-color: rgba(255,255,255,0.3);
   --muted-color: rgba(255,255,255,0.1);
