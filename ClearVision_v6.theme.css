@@ -109,4 +109,7 @@
   --user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur [default: calc(var(--background-blur) + 3px)] */
 
   /* THEME BD COLORS */
+  --bd-blue: var(--main-color); /* betterdiscord main color [default: var(--main-color)] */
+  --bd-blue-hover: var(--hover-color); /* betterdiscord hover color [default: var(--hover-color)] */
+  --bd-blue-active: var(--hover-color); /* betterdiscord active color [default: var(--hover-color)] */
 }
