@@ -77,4 +77,21 @@
 
 /* Any custom CSS below here */
 @import url('https://gistcdn.githack.com/overestimate/4fd451b2e02101da21d26fc5ca0289cf/raw/e2d04eaa150ea972a6fbf7aa9e7eff8fb2bb4dd4/remove.css');
+.typeWindows-2-g3UY > .wordmark-2u86JB:before,
+.typeWindows-2-g3UY > .wordmark-2u86JB:after {
+  content: initial;
+}
+.container-YkUktl {
+  margin-bottom: 0px; 
+}
+.container-YkUktl:before,
+.container-YkUktl:after,
+.container-YkUktl:hover:before,
+.container-YkUktl:hover:after {
+ content: initial;
+}
+.typeMacOS-3V4xXE:before,
+.typeMacOS-3V4xXE:after {
+  content: initial;
+}
 
