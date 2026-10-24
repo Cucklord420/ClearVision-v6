@@ -1,0 +1,11 @@
+# Repository instructions
+
+Read the current canonical guidebook at [Toe-Tickling/GUIDEBOOK.md](https://github.com/Cucklord420/Toe-Tickling/blob/main/GUIDEBOOK.md) in full before substantive changes. Record its commit and policy version, and apply it within the actual instruction hierarchy. Last verified checkpoint: version 1.2.2 at commit 4f519c3ea1ed120d36aefea014fbf31bc0593304; this is a reference only, so check the latest canonical default branch again.
+
+This is a fork of an inherited ClearVision v6 theme. Preserve the upstream Apache-2.0 license, attribution, and the MIT notice under lib/selectors. Keep declarative SCSS, CSS, and YAML in their native formats. The current theme is a CSS runtime; do not replace it with another runtime. Sass is pinned to 1.91.0 because Sass 1.92.0 changes output ordering for this repository's nested declarations. Before changing Sass, compare generated selectors, selector order, declarations, declaration order, and color serialization against the reviewed baseline. A successful build does not prove BetterDiscord or Vencord compatibility; verify the supported client before publishing. New first-party executables, automation scripts, and tests must follow the guidebook's Rust requirement.
+
+Before changing styles, build behavior, or release files, inspect main.scss, hljs.scss, package.json, package-lock.json, .gitlab-ci.yml, both GitHub workflows, and ClearVision_v6.theme.css. Preserve theme metadata, customization settings, URLs, and branch-gated publishing unless the requested change specifically requires an update.
+
+The supported source checks are npm ci, npm run build, and npm test. npm test compiles styles; it does not prove visual compatibility in BetterDiscord or Vencord. Verify the exact changed files and final CI result. Never deploy, publish personalized settings, expose credentials, or relicense inherited content as an incidental step.
+
+Preserve upstream notices and attribution for remotely imported styles and images; do not assume the project owns those assets. Before publishing style changes, inspect the generated output and the actual distributed theme file, `ClearVision_v6.theme.css`; successful compilation alone does not prove that the delivered theme is correct.

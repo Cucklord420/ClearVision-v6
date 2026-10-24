@@ -1,11 +1,17 @@
-image: node:latest
+image: node:24.19.0-bookworm-slim@sha256:a9f5f7c91a432850b2a8a7797adf5eadb6c733ceed61167806cee7ea7fbc29df
+
+variables:
+  NPM_CONFIG_CACHE: "$CI_PROJECT_DIR/.npm"
 
 cache:
+  key:
+    files:
+      - package-lock.json
   paths:
-    - node_modules/
+    - .npm/
 
 before_script:
-  - npm install
+  - npm ci --prefer-offline
 
 stages:
   - deploy

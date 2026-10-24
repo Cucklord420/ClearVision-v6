@@ -41,13 +41,11 @@ Download the theme file and move it into your [BetterDiscord](https://betterdisc
 
 ## Building from source
 
-In order build the theme from source, you can simply run `npm install` to install all missing dependencies, and `npm run build` to compile the theme into the `/public` folder.
+Use Node.js 24.19.0, the checked CI version. Sass is pinned to 1.91.0 to keep the inherited stylesheet's rule order stable. Run `npm ci` to install the exact versions from the lockfile, then `npm run build` to compile the theme into the `/public` folder.
 
 ### Dependencies
 
 - [sass](https://www.npmjs.com/package/sass)
-- [PostCSS Autoprefixer](https://www.npmjs.com/package/autoprefixer)
-- [PostCSS CLI](https://www.npmjs.com/package/postcss-cli)
 - [rimraf](https://www.npmjs.com/package/rimraf) (for cleanup)
 - [Prettier](https://www.npmjs.com/package/prettier) (code formatting)
 - _[DiscordSelectors](https://github.com/Zerthox/DiscordSelectors) (included in the `/lib` folder)_
