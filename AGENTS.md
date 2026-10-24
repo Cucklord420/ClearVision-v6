@@ -7,3 +7,5 @@ This is a fork of an inherited ClearVision v6 theme. Preserve the upstream Apach
 Before changing styles, build behavior, or release files, inspect main.scss, hljs.scss, package.json, package-lock.json, .gitlab-ci.yml, both GitHub workflows, and ClearVision_v6.theme.css. Preserve theme metadata, customization settings, URLs, and branch-gated publishing unless the requested change specifically requires an update.
 
 The supported source checks are npm ci, npm run build, and npm test. npm test compiles styles; it does not prove visual compatibility in BetterDiscord or Vencord. Verify the exact changed files and final CI result. Never deploy, publish personalized settings, expose credentials, or relicense inherited content as an incidental step.
+
+Preserve upstream notices and attribution for remotely imported styles and images; do not assume the project owns those assets. Before publishing style changes, inspect the generated output and the actual distributed theme file, `ClearVision_v6.theme.css`; successful compilation alone does not prove that the delivered theme is correct.
