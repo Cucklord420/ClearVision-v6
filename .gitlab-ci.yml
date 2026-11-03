@@ -18,7 +18,9 @@ stages:
 
 pages:
   stage: deploy
-  script: npm run build
+  script:
+    - npm test
+    - npm run build
   artifacts:
     name: '$CI_JOB_STAGE-$CI_COMMIT_REF_NAME'
     paths:
