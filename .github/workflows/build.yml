@@ -26,6 +26,8 @@ jobs:
           cache: npm
       - name: Install locked dependencies
         run: npm ci
+      - name: Compile test styles before publishing
+        run: npm test
       - name: Build
         run: npm run build
       - name: Save compiled site
