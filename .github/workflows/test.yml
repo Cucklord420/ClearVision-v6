@@ -24,7 +24,7 @@ jobs:
           node-version: '24.19.0'
           cache: npm
       - name: Install locked dependencies
-        run: npm ci
+        run: npm ci --omit=optional
       - name: Compile test styles
         run: npm test
       - name: Save compiled styles

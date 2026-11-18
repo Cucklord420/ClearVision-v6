@@ -11,7 +11,7 @@ cache:
     - .npm/
 
 before_script:
-  - npm ci --prefer-offline
+  - npm ci --prefer-offline --omit=optional
 
 stages:
   - deploy
