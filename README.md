@@ -41,7 +41,7 @@ Download the theme file and move it into your [BetterDiscord](https://betterdisc
 
 ## Building from source
 
-Use Node.js 24.19.0, the checked CI version. Sass is pinned to 1.91.0 to keep the inherited stylesheet's rule order stable. Run `npm ci --omit=optional` to install the locked build dependencies without optional packages, then `npm run build` to compile the theme into the `/public` folder.
+Use Node.js 24.22.3, the checked CI version. Sass is pinned to 1.91.0 to keep the inherited stylesheet's rule order stable. Run `npm ci --omit=optional` to install the locked build dependencies without optional packages, then `npm run build` to compile the theme into the `/public` folder.
 
 ### Dependencies
 
