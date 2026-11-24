@@ -1,18 +1,26 @@
-image: node:latest
+image: node:24.22.3-bookworm-slim@sha256:dc26ae92c9fb15cf6b1d63e20f0944b2efe0f115b20e00be48fb23fceb061c54
+
+variables:
+  NPM_CONFIG_CACHE: "$CI_PROJECT_DIR/.npm"
 
 cache:
+  key:
+    files:
+      - package-lock.json
   paths:
-    - node_modules/
+    - .npm/
 
 before_script:
-  - npm install
+  - npm ci --prefer-offline --omit=optional
 
 stages:
   - deploy
 
 pages:
   stage: deploy
-  script: npm run build
+  script:
+    - npm test
+    - npm run build
   artifacts:
     name: '$CI_JOB_STAGE-$CI_COMMIT_REF_NAME'
     paths:
